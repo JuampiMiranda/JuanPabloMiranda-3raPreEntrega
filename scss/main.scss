@@ -1,0 +1,22 @@
+/*utils*/
+@import "./utils/variables";
+@import "./utils/mixin";
+
+/*base*/
+@import"./base/base";
+
+/*components*/
+@import "./components/button";
+@import "./components/navbar";
+@import "./components/footer";
+
+/*pages*/
+@import "./pages/index";
+@import "./pages/fisioterapia";
+@import "./pages/kinesiologia";
+@import "./pages/estetica";
+@import "./pages/contacto";
+@import "./pages/deporte";
+@import "./pages/drenajelinfatico";
+@import "./pages/lipolaser";
+@import "./pages/neurodinamia";

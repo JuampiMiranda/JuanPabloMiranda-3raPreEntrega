@@ -1,0 +1,345 @@
+/*utils*/ /*---VARIABLES---*/ /*---MIXINS---*/
+/*base*/
+/*---RESET---*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.logo {
+  width: 8rem;
+}
+
+@media (min-width: 62rem) {
+  .logo {
+    width: 10rem;
+  }
+}
+/*components*/
+/*---BUTTON---*/
+.tarjeta__btn {
+  background-color: #d7fff1;
+  color: black;
+  font-size: 1.25rem;
+  font-weight: 900;
+  width: 12.5rem;
+  border-radius: 0%;
+}
+
+.contacto__btn {
+  background-color: #d7fff1;
+  font-size: 0.938rem;
+  border-radius: 0.313rem;
+  width: 6.25rem;
+  transition: 0.2s;
+}
+.contacto__btn :hover {
+  color: #23d4c6;
+}
+
+.articulo__btn {
+  background-color: #d7fff1;
+  font-size: 0.938rem;
+  border-radius: 0.313rem;
+  width: 6.25rem;
+  transition: 0.2s;
+}
+.articulo__btn :hover {
+  color: #d7fff1;
+}
+
+.whatsapp__btn {
+  position: fixed;
+  width: 3.75rem;
+  height: 3.75rem;
+  line-height: 3.938rem;
+  bottom: 1.563rem;
+  right: 1.563rem;
+  background: #25d366;
+  color: #FFF;
+  border-radius: 1.563rem;
+  text-align: center;
+  font-size: 2.188rem;
+  box-shadow: 0rem 0.063rem 0.625rem rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  transition: all 300ms ease;
+}
+.whatsapp__btn:hover {
+  text-decoration: none;
+  color: #20ba5a;
+  background-color: white;
+}
+
+/*---NAVBAR---*/
+header {
+  background-color: #23d4c6;
+}
+
+.barra {
+  padding: 0.625rem;
+  width: 100%;
+  transition: all 0.5s;
+}
+.barra_hamb {
+  margin-right: 1.25rem;
+  border: none;
+}
+.barra_collapse ul {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.barra_collapse ul li {
+  font-size: 1.5rem;
+  font-weight: 900;
+  display: inline-block;
+  position: relative;
+}
+.barra_collapse ul li ::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 0.25rem;
+  bottom: 0;
+  left: 0;
+  background-color: #d7fff1;
+  transform-origin: bottom right;
+  transition: transform 0.6s ease-out;
+}
+.barra_collapse ul li :hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.barra__celular {
+  text-align: center;
+  text-decoration: underline;
+}
+
+@media (min-width: 48rem) {
+  .barra_hamb {
+    margin-right: 1.25rem;
+  }
+}
+@media (min-width: 62rem) {
+  .barra_collapse {
+    padding: 0.313rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .barra_collapse ul li {
+    gap: 2.5rem;
+    margin-right: 1.25rem;
+  }
+}
+@media (min-width: 75rem) {
+  .barra_collapse {
+    padding: 0.313rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .barra_collapse ul {
+    gap: 2.5rem;
+    margin-right: 1.25rem;
+  }
+}
+@media (min-width: 87.5rem) {
+  .barra_collapse {
+    padding: 0.313rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .barra_collapse ul {
+    gap: 3.125rem;
+    margin-right: 1.25rem;
+  }
+}
+/*---FOOTER---*/
+footer {
+  background-color: #23d4c6;
+}
+footer .barrafooter__nav a {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+footer .barrafooter__nav ul li {
+  font-size: 1.25rem;
+  display: inline-block;
+  position: relative;
+}
+footer .barrafooter__nav ul li ::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 0.25rem;
+  bottom: 0;
+  left: 0;
+  background-color: #d7fff1;
+  transform-origin: bottom right;
+  transition: transform 0.6s ease-out;
+}
+footer .barrafooter__nav ul li :hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/*pages*/
+/*---INDEX---*/
+/*---PORTADA---*/
+.portada__contenido {
+  background-color: #b9fff1;
+}
+.portada__contenido div ul li {
+  list-style: square;
+  padding: 0.313rem;
+  text-align: start;
+}
+
+/*---TARJETAS---*/
+.tarjeta__portada--fisio {
+  background-color: rgb(240, 240, 240);
+  transition-duration: 0.5s;
+}
+.tarjeta__portada--fisio h3 a {
+  color: black;
+}
+.tarjeta__portada--fisio ul li {
+  list-style: square;
+  padding: 0.313rem;
+  text-align: start;
+}
+.tarjeta__portada--fisio:hover {
+  transform: scale(1.1);
+}
+
+.tarjeta__portada--kine {
+  background-color: rgb(240, 240, 240);
+  transition-duration: 0.5s;
+}
+.tarjeta__portada--kine h3 a {
+  color: black;
+}
+.tarjeta__portada--kine ul li {
+  list-style: square;
+  padding: 0.313rem;
+  text-align: start;
+}
+.tarjeta__portada--kine:hover {
+  transform: scale(1.1);
+}
+
+.tarjeta__portada--estetica {
+  background-color: rgb(240, 240, 240);
+  transition-duration: 0.5s;
+}
+.tarjeta__portada--estetica h3 a {
+  color: black;
+}
+.tarjeta__portada--estetica ul li {
+  list-style: square;
+  padding: 0.313rem;
+  text-align: start;
+}
+.tarjeta__portada--estetica:hover {
+  transform: scale(1.1);
+}
+
+@media (min-width: 75rem) {
+  .tarjeta__portada--kine {
+    height: 34rem;
+  }
+  .tarjeta__portada--estetica {
+    height: 40rem;
+  }
+}
+@media (min-width: 87.5rem) {
+  .tarjeta__portada--kine {
+    height: 22rem;
+  }
+  .tarjeta__portada--estetica {
+    height: 28rem;
+  }
+}
+/*---FISIOTERAPIA---*/ /*---KINESIOLOGIA---*/
+/*---ESTETICA---*/
+.tarjeta__estetica {
+  transition: 0.1s;
+}
+.tarjeta__estetica:hover {
+  transform: scale(1.1);
+}
+.tarjeta__estetica div ul li {
+  list-style: square;
+  padding: 0.313rem;
+  text-align: start;
+}
+
+@media (min-width: 36rem) {
+  .tarjeta__btn {
+    width: 28.125rem;
+  }
+}
+@media (min-width: 48rem) {
+  .tarjeta__estetica {
+    width: 18.75rem;
+  }
+}
+/*---CONTACTO---*/
+.contacto__iframe iframe {
+  border-radius: 0.938rem;
+  transition-duration: 0.5s;
+}
+.contacto__iframe iframe:hover {
+  transform: scale(1.1);
+}
+
+.contacto__wpp {
+  background-color: #b9fff1;
+}
+
+/*---ARTICULO-DEPORTE---*/
+.kinesio__rehabilitacion ul li {
+  list-style-type: square;
+}
+
+.kinesio__iframe iframe {
+  width: 100%;
+  height: 25rem;
+  border-radius: 0.313rem;
+}
+
+/*---ARTICULO-DRENAJE---*/
+.drenaje__manual ul li {
+  list-style-type: decimal;
+}
+
+/*---ARTICULO-LIPOLASER---*/ /*---ARTICULO-NEURODINAMIA---*/
+.neuro__iframe iframe {
+  width: 100%;
+  height: 25rem;
+  border-radius: 0.313rem;
+}
+
+/*# sourceMappingURL=styles.css.map */

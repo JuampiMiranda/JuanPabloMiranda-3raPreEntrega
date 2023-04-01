@@ -1,0 +1,125 @@
+
+/*---INDEX---*/
+/*---PORTADA---*/
+
+.portada__contenido{
+
+   background-color: $color-secundario;
+   
+      div{
+
+         ul{
+
+            li{
+
+               @include li();
+            }
+         }
+      }
+}
+
+/*---TARJETAS---*/
+
+.tarjeta__portada--fisio{
+
+    background-color: rgb(240, 240, 240);
+    transition-duration: 0.5s;
+    
+    h3{
+      a{
+         color: black;
+      }
+
+    }
+
+    ul{
+
+      li{
+         
+         @include li();
+      }
+    }
+
+     &:hover{
+
+        transform: scale(1.1);
+     }
+}
+
+.tarjeta__portada--kine{
+
+   background-color: rgb(240, 240, 240);
+   transition-duration: 0.5s;
+   
+   h3{
+      a{
+         color: black;
+      }
+
+    }
+
+   ul{
+
+     li{
+
+        @include li();
+     }
+   }
+
+    &:hover{
+
+       transform: scale(1.1);
+    }
+}
+
+.tarjeta__portada--estetica{
+
+   background-color: rgb(240, 240, 240);
+   transition-duration: 0.5s;
+   
+   h3{
+      a{
+         color: black;
+      }
+
+   }
+
+   ul{
+
+     li{
+
+        @include li();
+     }
+   }
+
+    &:hover{
+
+       transform: scale(1.1);
+    }
+}
+
+@media (min-width: 75rem){
+
+   .tarjeta__portada--kine{
+
+      height: 34rem;
+   }
+
+   .tarjeta__portada--estetica{
+
+      height: 40rem;
+   }
+}
+
+@media (min-width: 87.5rem){
+
+   .tarjeta__portada--kine{
+
+      height: 22rem;
+   }
+
+   .tarjeta__portada--estetica{
+
+      height: 28rem;
+   }
+}

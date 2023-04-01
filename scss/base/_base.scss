@@ -1,0 +1,39 @@
+
+/*---RESET---*/
+
+*{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+ul,
+ol{
+
+    list-style: none;
+}
+
+a{
+
+    text-decoration: none;
+    color: black;
+}
+
+.logo{
+
+    width: 8rem;
+}
+
+@media (min-width: 62rem){
+
+    .logo{
+
+        width: 10rem;
+    }
+}
+    
+
+

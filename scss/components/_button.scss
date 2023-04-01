@@ -1,0 +1,70 @@
+
+/*---BUTTON---*/
+
+ .tarjeta__btn{
+
+     background-color: $color-btn;
+     color: black;
+     font-size: 1.25rem;
+     font-weight: 900;
+     width: 12.5rem;
+     border-radius: 0%;
+}
+
+.contacto__btn{
+
+    background-color: $color-btn;
+    font-size: 0.938rem;
+    border-radius: 0.313rem;
+    width: 6.25rem;
+
+    transition: 0.2s;
+
+    :hover{
+        
+        color: $color-primario;
+    }
+}
+
+.articulo__btn{
+
+    background-color: $color-btn;
+    font-size: 0.938rem;
+    border-radius: 0.313rem;
+    width: 6.25rem;
+
+    transition: 0.2s;
+
+    :hover{
+        
+        color: $color-btn;
+    }
+}
+
+.whatsapp__btn{
+
+    position: fixed;
+    width: 3.75rem;
+    height: 3.75rem;
+    line-height: 3.938rem;
+    bottom: 1.563rem;
+    right: 1.563rem;
+    background: #25d366;
+    color: #FFF;
+    border-radius: 1.563rem;
+    text-align: center;
+    font-size: 2.188rem;
+    box-shadow: 0rem 0.063rem 0.625rem rgba(0,0,0,0.3);
+    z-index: 100;
+    transition: all 300ms ease;
+
+    &:hover{
+        text-decoration: none;
+        color: #20ba5a;
+        background-color: white;
+    }
+}
+
+
+
+

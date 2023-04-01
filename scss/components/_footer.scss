@@ -1,0 +1,45 @@
+
+/*---FOOTER---*/
+
+footer{
+
+    background-color: $color-primario;
+
+    .barrafooter__nav{
+
+        a{
+
+            color: white;
+            font-size: 1.50rem;
+            font-weight: 900;
+        }
+
+        ul{
+            li{
+                font-size: 1.25rem;
+                display: inline-block;
+                position: relative;
+                
+               ::after{
+
+                content: '';
+                position: absolute;
+                width: 100%;
+                transform: scaleX(0);
+                height: 0.25rem;
+                bottom: 0;
+                left: 0;
+                background-color: $color-btn;
+                transform-origin: bottom right;
+                transition: transform 0.6s ease-out;
+               }
+
+               :hover::after{
+                 
+                transform: scaleX(1);
+                transform-origin: bottom left;   
+               }
+            }
+        }
+    }
+}

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <meta name="description" content=" Sección de Turnos y Reclamos GIMA.">
+    <title>GIMA|Kinesiologia y Estetica | Contacto</title>
+</head>
+
+<body>
+
+    <!-- /////NAVBAR///// -->
+
+    <header class="shadow-sm">
+
+        <a class="whatsapp__btn" data-aos="fade-left" target="_blank" href="https://api.whatsapp.com/send?phone=+542616744090&text=Hola!%20Bienvenido%20a%20GIMA.%20Para%20agendar%20un%20turno%20cont%C3%A1ctanos%20a%20este%20n%C3%BAmero.%20Muchas%20gracias.">
+            <i class="icono__whatsapp bi-whatsapp"></i>
+        </a>
+
+        <nav role="navigation" class="barra container navbar navbar-expand-lg border-bottom">
+
+            <a class="navbar-brand text-light" href="../index.html"><img class="logo" data-aos="fade-right" src="../img/logo.png" alt="logo de la clinica. una g y una m partidas al medio donde se lee kinesiologia y estetica"></a>
+
+            <button class="barra_hamb navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span></button>
+
+            <div class="barra_collapse collapse navbar-collapse" id="navbarNavDropdown">
+
+                <ul class="navbar-nav gap-2 fw-bold">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="fisioterapia.html">Fisioterapia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="kinesiologia.html">Kinesiología</a>
+                    </li> 
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="estetica.html">Kinesiología Estética</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="turnos.html">Turnos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+                    
+            </div>
+    </nav>
+    
+    </header>
+
+    <main class="contacto">
+
+         <!-- /////TURNOS///// -->
+
+         <section>
+
+            <div class="contacto__wpp m-5 p-5 text-center shadow" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000">
+                <h2 class="display-4 fw-bold">¿Quieres agendar un turno con nosotros?</h2>
+                <p class="fs-4 text-start text-md-center">Utiliza el icono de whatsapp para contactarnos y agendar un turno.</p>
+                <p class="fs-3 text-center fw-bold text-decoration-underline">¡Será un placer atenderte!</p>
+            </div>
+
+        </section>
+
+        <!-- /////FORMULARIO CONTACTO///// -->
+
+        <section class="contacto__datos container p-5" id="contacto">
+
+            <div class="row">
+
+                <div class="d-flex flex-column justify-content-center">
+                    
+                    <div class="contacto__titulo">
+                        <h1 class="display-4 p-2 fw-bold text-center" id="contactanos">Contactanos</h1>
+                    </div>
+                    
+                    <form class="contacto__formulario" role="search" action="" name="contactogima" id="formulario">
+                        <div class="contacto__nombre mb-6">
+                            <label for="nombre-paciente" class="form-label fs-5">Ingrese su Nombre y Apellido</label>
+                            <input type="name" class="form-control" name="nombre" id="nombre">
+                        </div>
+                        <div class="contacto__telefono mb-6">
+                            <label for="telefono-paciente" class="form-label fs-5">Ingrese su Número de Telefono</label>
+                            <input type="tel" class="form-control" name="telefono" id="telefono">
+                        </div>
+                        <div class="contacto__email mb-6">
+                            <label for="email-paciente" class="form-label fs-5">Ingrese su Dirección de Email</label>
+                            <input type="email" class="form-control" name="email" id="email">
+                        </div>
+                        <div class="contacto__turnos mb-6">
+                            <label for="mensaje-paciente" class="form-label fs-5">Ingrese su Consulta, Reclamo o Sugerencia</label>
+                            <textarea class="form-control" name="mensaje" rows="5" id="mensaje"></textarea>
+                        </div>
+                        <div class="d-flex justify-content-center m-3">
+                            <input class="contacto__btn btn shadow" type="submit" value="Enviar">
+                        </div>
+                    </form>
+                </div>
+                
+            </div>
+        
+        </section>
+
+        <!-- /////UBICACIÓN///// -->
+
+        <section class="shadow">
+
+            <div class="contacto__ubicacion container">
+                <div class="row">
+                    <div class="contacto__iframe">
+                        <h2 class="display-4 fw-bold text-center m-3">Ubicación:</h2>
+                        <iframe class=" p-2 w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3347.822162753102!2d-68.86313058333137!3d-32.9557043
+                        28821305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0a4cb6f24f05%3A0x4c6a70ee2781d13!2sPalmares%20Open%20
+                        Mall%2C%20Ruta%20Panamericana%202650%2C%20M5501%20Godoy%20Cruz%2C%20Mendoza!5e0!3m2!1ses-419!2sar!4v1669931987362!5m2!1ses
+                        -419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-
+                        downgrade">
+                        </iframe>
+                    </div>
+                    <div class="shadow m-2">
+                        <ul class="fs-4">
+                            <li>Dirección: Palmares Open Mall, Ruta Panamericana, Godoy Cruz, Provincia de Mendoza</li>
+                            <li>Telefono: 2615845828</li>
+                            <li>Mail: gima@gmail.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>    
+
+        </section>
+
+    </main>
+
+        <!-- /////FOOTER///// -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="row barrafooter__nav gap-1 gap-lg-3">
+
+                    <a class="barrafooter__titulo d-flex justify-content-center fw-bold fs-3 p-2" href="../index.html"><img class="logo" data-aos="fade-up" src="../img/logo.png" alt=""></a>
+                    
+                    <ul class="text-center d-flex flex-column gap-2 flex-lg-row justify-content-md-center gap-lg-5">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="fisioterapia.html">Fisioterapia</a></li>
+                        <li><a href="kinesiologia.html">Kinesiología</a></li>
+                        <li><a href="estetica.html">Kinesiología Estética</a></li>
+                        <li><a href="turnos.html">Turnos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul> 
+   
+                <div class="barrafooter__social d-flex justify-content-center gap-5 fs-4 border-bottom border-dark p-2 border-2">
+    
+                        <a href="https://www.instagram.com/"><i class="bi bi-instagram text-light"></i></a>
+    
+                        <a href="https://www.facebook.com/"><i class="bi bi-facebook text-light"></i></a>
+    
+                </div>
+                <div class="barrafooter__copy text-center p-2">
+    
+                    <span>© Copyright - 2017 - 2023 www.gima.com.ar, TODOS LOS DERECHOS RESERVADOS</span> 
+                    
+                </div>        
+            </div>
+        </div>
+        
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../js/miarchivo.js"> </script>
+    <script> AOS.init(); </script>
+
+</body>
+
+</html>

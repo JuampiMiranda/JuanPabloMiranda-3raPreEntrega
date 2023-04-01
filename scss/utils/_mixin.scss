@@ -1,0 +1,16 @@
+/*---MIXINS---*/
+
+@mixin li{
+    list-style: square;
+    padding: 0.313rem;
+    text-align: start;
+}
+
+@mixin collapse{
+
+    padding: 0.313rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
