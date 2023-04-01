@@ -117,7 +117,7 @@ divTurno.innerHTML +=
                 <p class="card-text text-start">${turnoDisponibles.nombre}</p>
                 <p class="card-text text-start">${turnoDisponibles.dia}</p>
                 <p class="card-text text-start">${turnoDisponibles.hora}</p>
-                <button class="btn btn-primary">Solicitar</button>
+                <button id=${turnoDisponibles.id} class="btn btn-primary">Solicitar</button>
         </div>
     </div>
     </div>   
@@ -128,6 +128,21 @@ divTurno.innerHTML +=
 const solicitud = []
 
 const btnSolicitar = document.querySelector('.btn-primary')
-btnSolicitar.for
+btnSolicitar.f((btnSolicitar)=>{
+    btnSolicitar.onclick = ()=>{
+        const turnos = turnoDisponibles.find(turnoDisponibles=>turnoDisponibles.id===parseInt(btnSolicitar))
+
+        const pedirSolicitud = {
+            id: turnoDisponibles.id,
+            especialidad: turnoDisponibles.especialidad,
+            nombre: turnoDisponibles.nombre,
+            dia: turnoDisponibles.dia,
+            hora: turnoDisponibles.hora
+    }  
+    console.log(pedirSolicitud); 
+}
+});
+
+
 
 
