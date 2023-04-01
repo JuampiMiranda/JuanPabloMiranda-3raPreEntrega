@@ -128,6 +128,6 @@ divTurno.innerHTML +=
 const solicitud = []
 
 const btnSolicitar = document.querySelector('.btn-primary')
-btnSolicitar.for
+
 
 
